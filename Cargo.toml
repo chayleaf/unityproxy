@@ -22,7 +22,7 @@ tokio-rustls = { version = "0.26.0", optional = true }
 tokio-util = { version = "0.7.12", features = ["rt"] }
 
 [features]
-default = ["use-rustls"]
+default = ["use-native-tls"]
 dns-resolver = ["hickory-resolver"]
 binary = ["env_logger", "tokio/macros"]
 use-native-tls = ["tokio-native-tls"]
